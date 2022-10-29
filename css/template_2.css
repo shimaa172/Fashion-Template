@@ -1,0 +1,403 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "oswald";
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: var(--main-color);
+}
+
+:root {
+    --main-color: #f1f1f1;
+    --main-color2: #fff;
+    --main-color3: #ccc;
+}
+
+.container {
+    padding: 0.01em 30px;
+    margin: 16px 0px;
+}
+
+h1,
+h3,
+h5,
+h6,
+h4 {
+    margin: 10px 0 !important;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+.features .right p,
+.features .right span,
+.features .left p {
+    font-family: "Open Sans";
+}
+
+button,
+.footer-btn {
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    padding: 8px 16px;
+    background-color: var(--main-color2);
+}
+
+.clear::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* End Global Rules */
+
+/* Media Queries */
+
+/* x-Small */
+@media (max-width:600px) {
+    .header {
+        display: none;
+    }
+
+    .landing .intro-text h1:last-of-type {
+        display: none;
+    }
+}
+
+/* Medium */
+@media (max-width:992px) {
+
+    .features .left,
+    .features .right {
+        width: 100% !important;
+    }
+
+    .features .right {
+        margin-top: 50px;
+    }
+
+    .right .row {
+        margin: 0px !important;
+    }
+}
+
+/* End Media Queries */
+
+/* Start Header */
+.header,
+.right .row .head {
+    width: 100%;
+    background-color: #000;
+    padding: 8px 0px;
+}
+.header{
+    height: 38.2px;
+}
+
+.header .links a {
+    color: var(--main-color2);
+    padding: 8px 16px;
+}
+
+.header .links a:last-of-type {
+    float: right;
+    margin-top: -8px;
+    
+}
+
+.header .links a:hover {
+    color: #000 !important;
+    background-color: var(--main-color3) !important;
+}
+
+/* End Header */
+
+/* Start Landing */
+.landing .container {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    text-align: center;
+}
+
+.landing .container h1 {
+    font-size: 48px;
+}
+
+.landing h6 {
+    font-size: 16px;
+}
+
+.landing .container span {
+    background-color: #000;
+    color: var(--main-color2);
+    padding: 0px 8px;
+}
+
+.landing .image-section {
+    position: relative;
+}
+
+.landing .intro-text {
+    color: var(--main-color2);
+    letter-spacing: 4px;
+    padding: 12px 24px;
+    position: absolute;
+    transform: translate(0%, -50%);
+    top: 50%;
+    left: 0%;
+}
+
+.landing .intro-text h1:first-of-type {
+    font-size: 36px;
+}
+
+.landing .intro-text h1:last-of-type {
+    font-weight: 400;
+    font-size: 64px;
+}
+
+.landing .intro-text h6 button {
+    padding: 12px 24px !important;
+    opacity: 0.60;
+}
+
+/* End Landing */
+
+/* Page content */
+
+/* Start Features */
+/* Left Section */
+.features .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features .left {
+    width: 66.66666%;
+}
+
+.features .left .row {
+    background-color: var(--main-color2);
+    padding: 12px 24px;
+    margin-bottom: 50px;
+}
+
+.features .left .row:last-of-type {
+    margin-bottom: 0px;
+}
+
+.features .center {
+    text-align: center;
+}
+
+.features .center h3 {
+    font-size: 24px;
+}
+
+.features .center h5 {
+    font-size: 18px;
+}
+
+.center h5 span {
+    opacity: 0.60;
+}
+
+.features .left img {
+    padding: 16px 0px;
+}
+
+.features .left p {
+    text-align: justify;
+}
+
+.features .left .intro-text .btu-left {
+    float: left;
+}
+
+.features .left .intro-text .btu-right {
+    float: right;
+}
+
+.left .intro-text .btu-left button {
+    border: 1px solid var(--main-color3) !important;
+}
+
+.left .intro-text .btu-right button {
+    background-color: black;
+    color: var(--main-color2);
+}
+
+.btu-left button:hover,
+.btu-right button:hover,
+.img-list li:hover,
+.content p button:hover,
+.footer-btn:hover {
+    color: #000 !important;
+    background-color: var(--main-color3) !important;
+}
+
+.left .intro-text .btu-right span {
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #000;
+    background-color: var(--main-color2);
+}
+
+/* End Left */
+
+/* Right  Section */
+.features .right {
+    width: 33.33333%;
+}
+
+.right .row {
+    margin: 0px 0px 35px 35px;
+}
+
+.right .row .img-text {
+    color: var(--main-color2);
+    background-color: #000;
+    padding: 6px 16px;
+    margin-top: -10px;
+}
+
+.right .row h4 {
+    font-size: 20px;
+}
+
+.right .row .head {
+    color: var(--main-color2);
+    padding: 8px 16px !important;
+}
+
+.right .row .img-list {
+    background-color: var(--main-color2);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.img-list li {
+    padding: 16px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.img-list li img {
+    margin-right: 16px;
+    float: left;
+}
+
+.img-list li span {
+    font-size: 18px;
+}
+
+.right .row .content {
+    background-color: var(--main-color2);
+    padding: 16px 16px;
+}
+
+.content div {
+    background-color: var(--main-color);
+    height: 200px;
+    position: relative;
+}
+
+.content div span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content p span {
+    margin-bottom: 16px;
+    display: inline-block;
+    background-color: var(--main-color);
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+}
+
+.content p span:first-of-type {
+    background-color: black;
+    color: var(--main-color2);
+}
+
+.Inspiration {
+    padding: 2.5% 0px !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Inspiration p {
+    width: calc(91%/2);
+    margin: 0px;
+}
+
+.content a {
+    color: #000;
+    padding-left: 5px;
+    font-size: 24px !important;
+}
+
+.content a i:hover {
+    opacity: 0.60;
+}
+
+.content p input {
+    border: 1px solid var(--main-color3);
+    padding: 8px;
+}
+
+.content p button {
+    text-align: center;
+    width: 100%;
+    color: var(--main-color2);
+    background-color: #f44336;
+}
+
+/* End Right */
+/* End Features */
+
+/* Start Footer */
+.footer {
+    color: var(--main-color2);
+    background-color: #616161;
+    padding: 32px;
+    font-family: "Open Sans";
+}
+
+.footer p a {
+    color: var(--main-color2);
+}
+
+.footer p a:hover {
+    color: #4CAF50;
+}
+
+.footer-btn {
+    text-decoration: none;
+    color: var(--main-color2) !important;
+    background-color: #000 !important;
+}
+
+.footer-btn i {
+    margin-right: 16px;
+}
+/* End Footer */
